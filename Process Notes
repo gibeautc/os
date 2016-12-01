@@ -1,0 +1,37 @@
+umask value sets who has what priviliges by default
+
+
+fork()
+	Process A forks and creates A1, A2
+	Different PID
+	Do get access to all the open file descriptors
+	Gets copies of all variables (but not SAME after fork)
+	
+	fork() returns PID when for parent
+	in the child it returns 0
+	
+
+
+exec() family
+
+exit()
+
+
+wait()     wait for any child to die and returns ID (direct children)
+waitpid()  wait for specific child dies
+			check slides for different ways to write this NOHANG
+
+
+getpid()   returns your ID
+
+getppid() returns parent ID
+getpgrp()
+setpgid()
+setsid()
+getsid()
+getevn()
+putenv()
+nice()
+
+
+
